@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign-Up Form</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
 </head>
 <body>
-    
+    <header>
+        <img src="./images/Samurai logo.png" id="samurai-logo" alt="Samurai logo">
+        <span id="background-photo-credit">Photo by <a href="https://unsplash.com/@chengfengrecord?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">cheng feng</a> on <a href="https://unsplash.com/photos/psdV2Rl-GvU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+    </header>
+    <div class="form-container">
+        <div class="splash"></div>
+        <form action="" method="post">
+            <div class="form-row">
+                <label for="first-name">FIRST NAME</label>
+                <div></div>
+                <input type="text" id="first-name" name="first-name" required />
+            </div>
+            <div class="form-row">
+                <label for="last-name">LAST NAME</label>
+                <div></div>
+                <input type="text" id="last-name" name="last-name" required />
+            </div>
+            <div class="form-row">
+                <label for="email" required>EMAIL ADDRESS</label>
+                <div></div>
+                <input type="email" id="email" name="email" required/>
+            </div>
+            <div class="form-row">
+                <label for="phone">PHONE NUMBER</label>
+                <div></div>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-row">
+                <label for="pass">PASSWORD</label>
+                <div></div>
+                <input type="password" id="pass" name="pass" required />
+            </div>
+            <div class="form-row">
+                <label for="pass-confirm">CONFIRM PASSWORD</label>
+                <div></div>
+                <input type="password" id="pass-confirm" name="pass-confirm" required />
+            </div>
+        </form>
+        <div class="footer">
+            <button type="submit">Create Account</button>
+            <h4>Already have an account? <b>Log in here</b></h4>
+        </div>
+    </div>
 </body>
 </html>
