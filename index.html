@@ -13,8 +13,11 @@
         <span id="background-photo-credit">Photo by <a href="https://unsplash.com/@chengfengrecord?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">cheng feng</a> on <a href="https://unsplash.com/photos/psdV2Rl-GvU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
     </header>
     <div class="form-container">
-        <div class="splash"></div>
-        <form action="" method="post">
+        <section class="splash">
+            <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
+            <h2>You <em>know</em> you want to.</h2>
+        </section>
+        <form action="" id="register" method="post" novalidate>
             <div class="form-row">
                 <label for="first-name">FIRST NAME</label>
                 <div></div>
@@ -46,10 +49,10 @@
                 <input type="password" id="pass-confirm" name="pass-confirm" required />
             </div>
         </form>
-        <div class="footer">
-            <button type="submit">Create Account</button>
-            <h4>Already have an account? <b>Log in here</b></h4>
-        </div>
+        <section class="footer">
+            <button type="submit" form="register">Create Account</button>
+            <h4 class="login">Already have an account? <b>Log in here</b></h4>
+        </section>
     </div>
 </body>
 </html>
