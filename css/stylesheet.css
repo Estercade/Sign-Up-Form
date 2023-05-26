@@ -159,7 +159,7 @@ input:required + div::before {
 
     position: absolute;
     top: -0.1rem;
-    left: 11rem;
+    left: calc(50% + 9.3rem);
 }
 
 @media only screen and (min-width: 1000px) and (min-height: 900px) {
@@ -187,7 +187,7 @@ input:required + div::before {
     }
 
     form {
-        height: 35vh;
+        height: 30vh;
         justify-content: space-evenly;
     }
 
@@ -210,7 +210,7 @@ input:required + div::before {
 
     .splash,
     .footer {
-        height: 30vh;
+        height: 35vh;
         width: 100%;
         max-height: none;
     }
@@ -236,6 +236,10 @@ input:required + div::before {
 
     .login {
         margin: 0 0 1rem 2rem;
+    }
+
+    input:required + div::before {
+        left: 11rem;
     }
 }
 
