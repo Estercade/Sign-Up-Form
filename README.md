@@ -1,6 +1,6 @@
 # Sign-Up-Form
 
-This project was made following the instructions and specifications for The Odin Project Foundations Course calculator project (https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form).
+This project was made following the instructions and specifications for [The Odin Project Foundations Course sign up form project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form).
 
 ## Description
 
@@ -31,8 +31,8 @@ Wilson Lee
 ## Credits
 
 * Background image by [cheng feng on Unsplash](https://unsplash.com/@chengfengrecord/)
-* [Rajdhani font](https://fonts.google.com/specimen/Rajdhani/) from Google Fonts for webpage font
-* [Bruno Ace SC font](https://fonts.google.com/specimen/Bruno+Ace+SC/) from Google Fonts for logo font
+* [Rajdhani font from Google Fonts](https://fonts.google.com/specimen/Rajdhani/) for webpage font
+* [Bruno Ace SC font from Google Fonts](https://fonts.google.com/specimen/Bruno+Ace+SC/) for logo font
 * Logo image generated using [artflow.ai](https://app.artflow.ai/) and edited using [GIMP](https://www.gimp.org/)
 
 ## Acknowledgments
