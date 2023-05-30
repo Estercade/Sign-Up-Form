@@ -6,29 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
+    <script src="./js/javascript.js" defer></script>
 </head>
 <body>
     <header>
         <img src="./images/Yoru logo.png" id="yoru-logo" alt="Yoru logo">
-        <span id="background-photo-credit">Photo by <a href="https://unsplash.com/@chengfengrecord?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">cheng feng</a> on <a href="https://unsplash.com/photos/psdV2Rl-GvU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+        <span id="background-photo-credit">Background photo by <a href="https://unsplash.com/@chengfengrecord?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">cheng feng</a> on <a href="https://unsplash.com/photos/psdV2Rl-GvU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
     </header>
     <div class="form-container">
         <section class="splash">
             <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
             <h2>You <em>know</em> you want to.</h2>
         </section>
-        <form action="" id="register" method="post">
+        <form action="" id="register" method="post" novalidate>
             <div class="form-row">
                 <label for="first-name">FIRST NAME</label>
                 <br>
-                <input type="text" id="first-name" name="first-name" required />
-                <div class="msg-container"></div>
+                <input type="text" id="first-name" name="first-name" pattern="^[a-zA-Z\s,\.'\-]+$" required />
+                <div class="msg-container" id="first-name-error"></div>
             </div>
             <div class="form-row">
                 <label for="last-name">LAST NAME</label>
                 <br>
-                <input type="text" id="last-name" name="last-name" required />
-                <div class="msg-container"></div>
+                <input type="text" id="last-name" name="last-name" pattern="^[a-zA-Z\s,\.'\-]+$" required />
+                <div class="msg-container" id="last-name-error"></div>
             </div>
             <div class="form-row">
                 <label for="email" required>EMAIL ADDRESS</label>
@@ -43,20 +44,20 @@
                 <div class="msg-container"></div>
             </div>
             <div class="form-row">
-                <label for="pass">PASSWORD</label>
+                <label for="password">PASSWORD</label>
                 <br>
-                <input type="password" id="pass" name="pass" required />
+                <input type="password" id="password" name="password" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[,\.\/!@#$%^&\*])[a-zA-Z\d,\.\/!@#$%^&\*]{6,16}$" required />
                 <div class="msg-container"></div>
             </div>
             <div class="form-row">
-                <label for="pass-confirm">CONFIRM PASSWORD</label>
+                <label for="password-confirm">CONFIRM PASSWORD</label>
                 <br>
-                <input type="password" id="pass-confirm" name="pass-confirm" required />
+                <input type="password" id="password-confirm" name="password-confirm" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[,\.\/!@#$%^&\*])[a-zA-Z\d,\.\/!@#$%^&\*]{6,16}$" required />
                 <div class="msg-container"></div>
             </div>
         </form>
         <section class="footer">
-            <button type="submit" form="register">Create Account</button>
+            <button type="submit" form="register" id="submit">Create Account</button>
             <h4 class="login">Already have an account? <b>Log in here</b></h4>
         </section>
     </div>

@@ -29,9 +29,10 @@ body, html, button {
 body {
     background-color: black;
     background-image: linear-gradient(to right, transparent, 70%, black), url(../images/cheng-feng-psdV2Rl-GvU-unsplash.jpg);
-    background-size: 100vh;
+    background-size: 100vw;
     background-repeat: no-repeat;
     background-position-x: center;
+    background-attachment: fixed;
 }
 
 #yoru-logo {
@@ -54,7 +55,8 @@ header {
 
 #background-photo-credit {
     position: absolute;
-    bottom: -0;
+    width: 100vw;
+    bottom: 0.2rem;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -97,7 +99,7 @@ form {
     width: 100%;
     min-width: 12rem;
     margin: 1rem 0;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     position: relative;
     
     text-align: center;
@@ -123,20 +125,22 @@ input {
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: clamp(8px, 1.4rem, 21px);
 }
 
 button[type="submit"] {
     height: 3rem;
     width: 6rem;
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
+    border-radius: 0.4rem;
 
     font-family: "Rajdhani Regular", sans-serif;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 .login {
-    margin: 0;
+    margin-left: 0;
 }
 
 .form-container {
@@ -147,6 +151,14 @@ input[type="text"]:invalid,
 input[type="password"]:invalid,
 input[type="email"]:invalid {
     border-color: red;
+    background: linear-gradient(to right, rgba(255, 255, 255, 5), 90%, rgba(255, 0, 0, 100%));
+}
+
+input[type="text"]:valid,
+input[type="password"]:valid,
+input[type="email"]:valid {
+    border-color: green;
+    background: linear-gradient(to right, rgba(255, 255, 255, 5), 90%, rgba(0, 255, 0, 100%));
 }
 
 input:required + div::before {
@@ -154,12 +166,43 @@ input:required + div::before {
 
     background-color: red;
     content: "REQUIRED";
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: bold;
 
     position: absolute;
     top: -0.1rem;
-    left: calc(50% + 9.3rem);
+    left: calc(50% + 9.7rem);
+}
+
+input:required + div::after {
+    padding: 0.1rem;
+    width: 25rem;
+    text-align: center;
+
+    color: red;
+    /* content: "1"; */
+    font-size: 0.7rem;
+    font-weight: bold;
+
+    position: absolute;
+    top: 3rem;
+    left: calc(50% - 12.7rem);
+}
+
+.name-invalid + div::after {
+    content: "Please enter a valid name.";
+}
+
+.email-invalid + div::after {
+    content: "Please enter a valid email address.";
+}
+
+.password-invalid + div::after {
+    content: "Please enter a valid password with at least one uppercase character, one digit, and one special character.";
+}
+
+.password-mismatch + div::after {
+    content: "The password and confirmation password do not match.";
 }
 
 @media only screen and (min-width: 1000px) and (min-height: 900px) {
@@ -199,7 +242,7 @@ input:required + div::before {
     }
 
     input {
-        width: 13rem;
+        width: 16rem;
     }
 
     #background-photo-credit {
@@ -231,15 +274,22 @@ input:required + div::before {
     }
 
     button[type="submit"] {
-        margin: 1rem 0 1rem 2rem;
+        margin: 1rem 0 1rem 2.8rem;
     }
 
     .login {
-        margin: 0 0 1rem 2rem;
+        margin: 0 0 1rem 2.8rem;
     }
 
     input:required + div::before {
-        left: 11rem;
+        left: 13.3rem;
+    }
+
+    input:required + div::after {
+        text-align: left;
+        width: 16.5rem;
+        left: 0rem;
+        top: 3rem;
     }
 }
 
