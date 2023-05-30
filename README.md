@@ -26,8 +26,17 @@ The goal of this project is to create a functioning sign-up form using a combina
 ## Author
 
 Wilson Lee
-- [Github](https://github.com/estercade)
+- [Github](https://github.com/estercade/)
+
+## Credits
+
+* Background image by [cheng feng on Unsplash](https://unsplash.com/@chengfengrecord/)
+* [Rajdhani font](https://fonts.google.com/specimen/Rajdhani/) from Google Fonts for webpage font
+* [Bruno Ace SC font](https://fonts.google.com/specimen/Bruno+Ace+SC/) from Google Fonts for logo font
+* Logo image generated using [artflow.ai](https://app.artflow.ai/) and edited using [GIMP](https://www.gimp.org/)
 
 ## Acknowledgments
 
-* [The Odin Project] (https://www.theodinproject.com/)
+* [The Odin Project](https://www.theodinproject.com/)
+* [RegExr](https://regexr.com/)
+* [Interneting Is Hard](https://internetingishard.netlify.app/)
